@@ -1,0 +1,14 @@
+-- 계정당 카운트 1개 증가
+-- 이미 게시글을 조회한 계정인지 체크용 db table
+
+create table bbsReadCount(
+	seq int auto_increment primary key,
+	
+	id varchar(50) not null,	-- 조회한 글의 시퀀스
+	bbsSeq int not null			-- 조회한 사람 id
+);
+
+--alter table bbsReadCount
+--add foreign key(id) references member(id);
+
+select * from bbsReadCount;
