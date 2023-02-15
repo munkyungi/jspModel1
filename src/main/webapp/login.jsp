@@ -11,12 +11,6 @@
 
 <title>Login Page</title>
 
-<style type="text/css">
-
-
-
-</style>
-
 </head>
 
 <body>

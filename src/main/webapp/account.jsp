@@ -31,40 +31,39 @@
 
 <form action="accountAf.jsp" method="post">
 
-<table align="center">
-<tr>
-	<td>ID</td>
-	<td>
-		<input type="text" id="id" name="id" size="20"><br>
-		<p id="idcheck" style="font-size: 8px"></p>
-		<input type="button" id="idChkBtn" value="id확인">
-	</td>
-</tr>
-<tr>
-	<td>PASSWORD</td>
-	<td>
-		<input type="text" id="pwd" name="pwd" size="20"><br>
-	</td>
-</tr>
-<tr>
-	<td>이름</td>
-	<td>
-		<input type="text" name="name" size="20">
-	</td>
-</tr>
-<tr>
-	<td>이메일</td>
-	<td>
-		<input type="email" name="email" size="20">
-	</td>
-</tr>
-<tr>
-	<td colspan="2" align="center">
-		<input type="submit" value="회원가입">
-	</td>
-</tr>
-
-</table>
+	<table align="center">
+		<tr>
+			<td>ID</td>
+			<td>
+				<input type="text" id="id" name="id" size="20"><br>
+				<p id="idcheck" style="font-size: 8px"></p>
+				<input type="button" id="idChkBtn" value="id확인">
+			</td>
+		</tr>
+		<tr>
+			<td>PASSWORD</td>
+			<td>
+				<input type="text" id="pwd" name="pwd" size="20"><br>
+			</td>
+		</tr>
+		<tr>
+			<td>이름</td>
+			<td>
+				<input type="text" name="name" size="20">
+			</td>
+		</tr>
+		<tr>
+			<td>이메일</td>
+			<td>
+				<input type="email" name="email" size="20">
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" align="center">
+				<input type="submit" value="회원가입">
+			</td>
+		</tr>
+	</table>
 
 </form>
 </div>
@@ -81,8 +80,6 @@ $(document).ready(function() {
 			url: "idcheck.jsp",
 			data: { "id": $("#id").val() },
 			success:function(msg){
-				// alert(msg.trim()); // "YES"
-				
 				if(msg.trim() == "YES"){
 					$("#idcheck").css("color", "#0000ff");
 					$("#idcheck").text("사용 할 수 있는 아이디입니다");
@@ -98,10 +95,7 @@ $(document).ready(function() {
 		});
 	});
 });
-
-
 </script>
-
 
 
 </body>

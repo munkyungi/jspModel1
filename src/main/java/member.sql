@@ -20,3 +20,5 @@ from member
 where id='abc';
 
 select * from member;
+
+delete from member where id="poi";
